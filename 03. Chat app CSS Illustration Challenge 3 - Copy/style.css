@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+#wrapper{
+    height: 100vh;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.purple-gradient-bg{
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient( hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    height: 90vh;
+    width: 20vw;
+    border-radius: 1px;
+    border-bottom-left-radius:160px ;
+    border-bottom-right-radius: 160px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4rem;
+    gap: 8rem;
+    position: relative;
+    z-index: 10;
+    left: 12rem;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.mobile-box{
+    background-color: rgb(255, 255, 255,1);
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 3px 6px 30px hsl(276, 38%, 75%);
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+    /* images width and height  */
+.avatar-img img{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+
+
+}
+.avatar-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+}
+.avatar-info-top{
+    color: white;
+    display: flex;
+    border-radius:  1rem 1rem 0 0;
+    flex-direction: column;
+    background:linear-gradient( to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    
+}
+.white-notch{
+    background-color: white;
+    width: 70%;
+    height: 3vh;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 1px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.avatar-info-left{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem;
+    align-items: center;
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+
+}
+.avatar-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.6rem;
+    
+}
+
+.avatar-name{
+    font-size: 12px;
+}
+.avatar-status{
+    font-size: 10px;
+    color: hsl(289, 100%, 90%);
+}
+
+.avatar-initial-msg-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 70%;
+}
+
+.msg-1, .msg-2{
+    color: hsl(276, 55%, 52%);
+    background-color:hsl(276, 55%, 92%); 
+    font-size: 0.7rem;
+    font-weight:400;
+    padding: 0.4rem;
+    border-radius: 8px 11px 11px 3px;
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+
+}
+
+
+.reply-msg-box{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.3rem;
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+}
+.dog-pictures-box{
+    display: flex;
+    gap: 0.5rem;
+    
+}
+.dog-pic-1 img, .dog-pic-2 img, .dog-pic-3 img{
+    width: 40px;
+    border-radius: 10px;
+}
+
+.reply-msg-1, .reply-msg-2{
+    columns: rgb(0, 0, 0);
+    background-color:hsl(0, 0%, 100%);
+    box-shadow: 1px 0px 4px rgb(176, 176, 176); 
+    font-size: 0.7rem;
+    font-weight:400;
+    padding: 0.4rem;
+    border-radius: 11px 8px 3px 11px;
+    
+}
+.reply-msg-1{
+    width: 70%;
+    
+}
+.avatar-reply{
+    color: hsl(276, 55%, 52%);
+    background-color:hsl(276, 55%, 92%); 
+    font-size: 0.7rem;
+    font-weight:400;
+    padding: 0.4rem;
+    border-radius: 8px 11px 11px 3px;
+    width: 70%;
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+
+}
+
+.cost-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.cost-1-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-weight: 500;
+    padding: 0.7rem;
+    border-radius: 8px 14px 14px 3px;
+    font-size: 0.7rem;
+    color: white;
+    background:linear-gradient( to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+
+}
+.cost-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+
+}
+
+.walk-cost{
+    font-size: 0.9rem;
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+
+}
+
+form{
+    display: flex;
+    align-items: center;
+    animation: 1.4s ease-out 0s 1 slideInFromLeft;
+
+    
+}
+form input{
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0px 1px 8px rgb(199, 199, 199);
+    border-radius: 2rem;
+    border: none;
+}
+form svg{
+    position: relative;
+    right: 2rem;
+    font-size: 1rem;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    overflow-x: hidden;
+}
+.heading{
+    
+    color: hsl(271, 36%, 24%);
+}
+.description{
+    width: 45%;
+    color: hsl(270, 7%, 64%);
+    line-height: 1.7rem;
+}
+
+/* Media Queries  */
+@media (max-width:1020px){
+    .purple-gradient-bg{
+        height: 60vh;
+    }
+    .container{
+        position: relative;
+        left: 5rem;
+        gap: 4rem;
+        padding: 2rem;
+        
+    }
+    .mobile-box{
+        width: 100%;
+    }
+    .avatar-info-top{
+        font-size: 0.7rem;
+    }
+    .avatar-img img{
+        width: 20px;
+    }
+    .white-notch{
+        background-color: white;
+        width: 70%;
+        height: 2vh;
+    }
+    .avatar-name{
+        font-size: 12px;
+    }
+    .avatar-status{
+        font-size: 8px;
+        color: hsl(289, 100%, 90%);
+    }
+    .msg-1, .msg-2{
+        font-size: 0.6rem;
+        padding: 0.5rem;
+    }
+    .dog-pic-1 img, .dog-pic-2 img, .dog-pic-3 img{
+        width: 30px;
+    }
+    .reply-msg-1, .reply-msg-2{
+        font-size: 0.6rem;
+        padding: 0.5rem;
+
+    }
+    .avatar-reply{
+        font-size: 0.6rem;
+        padding: 0.5rem;
+
+    }
+    .cost-1-container{
+        font-size: 0.5rem;
+    
+    }
+    
+    .walk-cost{
+        font-size: 0.7rem;
+    }
+    form input{
+        padding: 0.6rem;
+    }
+    form svg{
+        font-size: 1.2rem;
+    }
+    .about-us{
+        gap: 1.5em;
+    }
+    .heading{
+        font-size: 10px;
+    }
+    .description{
+        width: 75%;
+        line-height: 1.7rem;
+    }
+    
+}
+
+@media (max-width:400px){
+    .purple-gradient-bg{
+        height: 70vh;
+        width: 40vw;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left:0rem;
+        gap: 4rem;
+        padding: 2rem;
+        overflow: hidden;
+    }
+    .mobile-box{
+        width: 100%;
+    }
+    .avatar-info-top{
+        font-size: 0.9rem;
+    }
+    .avatar-img img{
+        width: 30px;
+    }
+    .white-notch{
+        background-color: white;
+        width: 70%;
+        height: 2vh;
+    }
+    .avatar-name{
+        font-size: 14px;
+    }
+    .avatar-status{
+        font-size: 10px;
+        color: hsl(289, 100%, 90%);
+    }
+    .msg-1, .msg-2{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    .dog-pic-1 img, .dog-pic-2 img, .dog-pic-3 img{
+        width: 40px;
+    }
+    .reply-msg-1, .reply-msg-2{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+
+    }
+    .avatar-reply{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+
+    }
+    .cost-1-container{
+        font-size: 0.7rem;
+    
+    }
+    
+    .walk-cost{
+        font-size: 0.9rem;
+    }
+    form input{
+        padding: 0.9rem;
+    }
+    form svg{
+        font-size: 0.9rem;
+    }
+    .about-us{
+        text-align: center;
+        gap: 1.5em;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    .description{
+        width: 100%;
+        line-height: 1.7rem;
+    }
+    
+}
+@media (max-width:375px){
+    .purple-gradient-bg{
+        height: 70vh;
+        width: 40vw;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 2rem;
+    }
+    .mobile-box{
+        width: 100%;
+    }
+    .avatar-info-top{
+        font-size: 0.9rem;
+    }
+    .avatar-img img{
+        width: 30px;
+    }
+    .white-notch{
+        background-color: white;
+        width: 70%;
+        height: 2vh;
+    }
+    .avatar-name{
+        font-size: 14px;
+    }
+    .avatar-status{
+        font-size: 10px;
+        color: hsl(289, 100%, 90%);
+    }
+    .msg-1, .msg-2{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    .dog-pic-1 img, .dog-pic-2 img, .dog-pic-3 img{
+        width: 40px;
+    }
+    .reply-msg-1, .reply-msg-2{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+
+    }
+    .avatar-reply{
+        font-size: 0.7rem;
+        padding: 0.5rem;
+
+    }
+    .cost-1-container{
+        font-size: 0.7rem;
+    
+    }
+    .walk-cost{
+        font-size: 0.9rem;
+    }
+    form input{
+        padding: 0.9rem;
+    }
+    form svg{
+        font-size: 0.9rem;
+    }
+    .about-us{
+        text-align: center;
+        gap: 1.5em;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    .description{
+        width: 100%;
+        line-height: 1.7rem;
+    }
+    
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  
